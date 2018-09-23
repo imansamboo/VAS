@@ -1,0 +1,13 @@
+{
+    "name": "iman/value_added_system",
+    "authors": [
+        {
+            "name": "imansamboo",
+            "email": "imansamboo@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^5.7",
+        "illuminate/routing": "^5.7"
+    }
+}
