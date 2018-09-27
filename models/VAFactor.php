@@ -5,9 +5,13 @@
  * Date: 9/23/18
  * Time: 3:41 PM
  */
-
 namespace models;
+require __DIR__.'/../vendor/autoload.php';
+
+echo 1;
+
 use Illuminate\Database\Eloquent\model;
+echo 1;
 
 class VAFactor extends model
 {
@@ -16,7 +20,7 @@ class VAFactor extends model
      *
      * @var string
      */
-    protected $table = 'VA-main';
+    protected $table = 'VA-factor';
 
     /**
      * The database primary key value.
@@ -30,6 +34,6 @@ class VAFactor extends model
      *
      * @var array
      */
-    protected $fillable = ['user_id','product_type', 'product_id', 'company_id',  'factor_id'];
+    protected $fillable = ['user_id','name'];
 
 }
