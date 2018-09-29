@@ -1,5 +1,4 @@
 <?php
-require __DIR__.'/../vendor/autoload.php';
 
 /**
  * Created by PhpStorm.
@@ -7,10 +6,8 @@ require __DIR__.'/../vendor/autoload.php';
  * Date: 9/23/18
  * Time: 3:41 PM
  */
-
-namespace models;
+namespace App;
 use Illuminate\Database\Eloquent\model;
-
 
 class VA extends model
 {
@@ -34,5 +31,4 @@ class VA extends model
      * @var array
      */
     protected $fillable = ['user_id','product_type', 'product_id', 'company_id', 'factor_id'];
-
 }

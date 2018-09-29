@@ -1,6 +1,4 @@
 <?php
-require __DIR__.'/../vendor/autoload.php';
-
 /**
  * Created by PhpStorm.
  * User: iman
@@ -8,9 +6,7 @@ require __DIR__.'/../vendor/autoload.php';
  * Time: 3:36 PM
  */
 use Illuminate\Database\Capsule\Manager as Capsule;
-
 $capsule = new Capsule;
-
 $capsule->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',

@@ -6,9 +6,9 @@
  * Time: 3:41 PM
  */
 
-namespace models;
-require __DIR__.'/../vendor/autoload.php';
+namespace App\Models;
 use Illuminate\Database\Eloquent\model;
+
 
 class CompanySpecification extends model
 {

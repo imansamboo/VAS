@@ -5,13 +5,9 @@
  * Date: 9/23/18
  * Time: 3:41 PM
  */
-namespace models;
-require __DIR__.'/../vendor/autoload.php';
-
-echo 1;
-
+namespace App\Models;
 use Illuminate\Database\Eloquent\model;
-echo 1;
+
 
 class VAFactor extends model
 {

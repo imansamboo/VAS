@@ -12,6 +12,7 @@ class ComposerStaticInit4add63a92fd40c042a9f342985c5bd9a
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '3bb8a3e8facd2b5cf27a4f3a20858248' => __DIR__ . '/../..' . '/db.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -51,6 +52,12 @@ class ComposerStaticInit4add63a92fd40c042a9f342985c5bd9a
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 26,
+        ),
+        'A' => 
+        array (
+            'App\\Models\\' => 11,
+            'App\\Controllers\\' => 16,
+            'App\\' => 4,
         ),
     );
 
@@ -154,6 +161,18 @@ class ComposerStaticInit4add63a92fd40c042a9f342985c5bd9a
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
+        'App\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
+        ),
+        'App\\Controllers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/controllers',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
