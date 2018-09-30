@@ -35,9 +35,11 @@ class ComposerStaticInit4add63a92fd40c042a9f342985c5bd9a
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
+            'PragmaRX\\Random\\' => 16,
         ),
         'I' => 
         array (
+            'Illuminate\\View\\' => 16,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Session\\' => 19,
             'Illuminate\\Routing\\' => 19,
@@ -117,6 +119,14 @@ class ComposerStaticInit4add63a92fd40c042a9f342985c5bd9a
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'PragmaRX\\Random\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pragmarx/random/src',
+        ),
+        'Illuminate\\View\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/view',
         ),
         'Illuminate\\Support\\' => 
         array (

@@ -9,28 +9,20 @@
 namespace App\Controllers;
 use Illuminate\Http\Request;
 use App\Models\VAFactor;
+use Illuminate\View\View;
+use Illuminate\Routing\Controller;
 
-class FactorController
+class FactorController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\View\View
      */
-    public function index(Request $request)
+    public function index()
     {
-        $keyword = $request->get('search');
-        $perPage = 25;
-
-        if (!empty($keyword)) {
-            $contents = VAFactor::where('content', 'LIKE', "%$keyword%")
-                ->orWhere('men_id', 'LIKE', "%$keyword%")
-                ->latest()->paginate($perPage);
-        } else {
-            $contents = VAFactor::latest()->paginate($perPage);
-        }
-
-        return view('admin.contents.index', compact('contents'));
+        $factors = VAFactor::all();
+        return view('admin.contents.index',$factors);
     }
 
     /**
@@ -52,10 +44,9 @@ class FactorController
      */
     public function store(Request $request)
     {
+        $factor = $request->all();
 
-        $requestData = $request->all();
-
-        VAFactor::create($requestData);
+        VAFactor::create($factor);
 
         return redirect('admin/contents')->with('flash_message', 'VAFactor added!');
     }
@@ -69,9 +60,9 @@ class FactorController
      */
     public function show($id)
     {
-        $content = VAFactor::findOrFail($id);
+        $factor = VAFactor::findOrFail($id);
 
-        return view('admin.contents.show', compact('content'));
+        return view('admin.contents.show', $factor);
     }
 
     /**
@@ -83,9 +74,9 @@ class FactorController
      */
     public function edit($id)
     {
-        $content = VAFactor::findOrFail($id);
+        $factor = VAFactor::findOrFail($id);
 
-        return view('admin.contents.edit', compact('content'));
+        return view('admin.contents.edit', $factor);
     }
 
     /**
@@ -101,8 +92,8 @@ class FactorController
 
         $requestData = $request->all();
 
-        $content = VAFactor::findOrFail($id);
-        $content->update($requestData);
+        $factor = VAFactor::findOrFail($id);
+        $factor->update($requestData);
 
         return redirect('admin/contents')->with('flash_message', 'VAFactor updated!');
     }
