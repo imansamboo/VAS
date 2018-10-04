@@ -5,7 +5,7 @@
  * Date: 9/23/18
  * Time: 3:41 PM
  */
-namespace App\Models;
+namespace Iman\App\Models;
 use Illuminate\Database\Eloquent\model;
 
 

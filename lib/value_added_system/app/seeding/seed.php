@@ -5,13 +5,13 @@
  * Date: 9/30/18
  * Time: 3:15 PM
  */
-namespace  App\Seeding;
+namespace  Iman\App\Seeding;
 
-require_once '../../db.php';
+require_once '../../../../db.php';
 use PragmaRX\Random\Random;
-use App\Models\VAFactor;
-use App\Models\VA;
-use App\Models\CompanySpecification;
+use Iman\App\Models\VAFactor;
+use Iman\App\Models\VA;
+use Iman\App\Models\CompanySpecification;
 
 $random = new Random();
 for($i = 1; $i < 50 ;$i++){

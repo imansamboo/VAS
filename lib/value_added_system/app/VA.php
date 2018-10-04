@@ -6,7 +6,7 @@
  * Date: 9/23/18
  * Time: 3:41 PM
  */
-namespace App;
+namespace Iman\App;
 use Illuminate\Database\Eloquent\model;
 
 class VA extends model

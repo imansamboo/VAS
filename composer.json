@@ -17,10 +17,11 @@
     },
     "autoload": {
         "psr-4":{
-            "App\\": "app/",
-            "App\\Models\\": "app/models",
-            "App\\Controllers\\": "app/controllers"
+            "Iman\\": "lib/value_added_system/",
+            "Iman\\App\\": "lib/value_added_system/app/",
+            "Iman\\App\\Models\\": "lib/value_added_system/app/models",
+            "Iman\\App\\Controllers\\": "lib/value_added_system/app/controllers"
         },
-        "files": ["db.php"]
+        "files": ["lib/functions.php"]
     }
 }
