@@ -7,7 +7,7 @@
  */
 namespace  App\Seeding;
 
-require_once '../../db.php';
+require_once '../../../db.php';
 use PragmaRX\Random\Random;
 use App\Models\VAFactor;
 use App\Models\VA;

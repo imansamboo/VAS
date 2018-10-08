@@ -17,9 +17,9 @@
     },
     "autoload": {
         "psr-4":{
-            "App\\": "app/",
-            "App\\Models\\": "app/models",
-            "App\\Controllers\\": "app/controllers"
+            "App\\": "lib/app/",
+            "App\\Models\\": "lib/app/models",
+            "App\\Controllers\\": "lib/app/controllers"
         },
         "files": ["db.php"]
     }

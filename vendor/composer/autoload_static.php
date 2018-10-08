@@ -174,15 +174,15 @@ class ComposerStaticInit4add63a92fd40c042a9f342985c5bd9a
         ),
         'App\\Models\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/models',
+            0 => __DIR__ . '/../..' . '/lib/app/models',
         ),
         'App\\Controllers\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/controllers',
+            0 => __DIR__ . '/../..' . '/lib/app/controllers',
         ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/lib/app',
         ),
     );
 

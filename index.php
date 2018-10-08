@@ -15,11 +15,15 @@ new VA2();
 echo 'yes';
 
 $company = new CompanySpecification();
+echo 'yes';
+
 $company->Create(array(
     'user_id' => 3,
     'address' => '  dffef   ',
     'economical_number' => 11221,
     'registration_number' => 122121212
 ));
+echo 'yes';
+
 dd(CompanySpecification::all());
 
