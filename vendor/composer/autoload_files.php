@@ -12,4 +12,5 @@ return array(
     '320cde22f66dd4f5d3fd621d3e88b98f' => $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
     '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
     '3bb8a3e8facd2b5cf27a4f3a20858248' => $baseDir . '/db.php',
+    'ade5f5c15e11d9aa5bee2836afccf971' => $baseDir . '/lib/functions.php',
 );

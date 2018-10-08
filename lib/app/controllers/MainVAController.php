@@ -9,7 +9,7 @@
 namespace App\Controllers;
 
 
-class MainVAController
+class MainVAController extends Controller
 {
-
+    protected $modelName = 'App\Models\VA';
 }

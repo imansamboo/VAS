@@ -33,6 +33,7 @@ return array(
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
     'Illuminate\\Container\\' => array($vendorDir . '/illuminate/container'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
+    'App\\Views\\' => array($baseDir . '/lib/app/views'),
     'App\\Models\\' => array($baseDir . '/lib/app/models'),
     'App\\Controllers\\' => array($baseDir . '/lib/app/controllers'),
     'App\\' => array($baseDir . '/lib/app'),

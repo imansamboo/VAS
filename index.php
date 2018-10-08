@@ -9,21 +9,12 @@ require_once 'db.php';
 use App\VA as VA;
 use App\Models\VA as VA2;
 use App\Models\CompanySpecification;
-new VA();
-echo 'yes';
-new VA2();
-echo 'yes';
+use Illuminate\View;
 
-$company = new CompanySpecification();
-echo 'yes';
+use App\Controllers\CompanySpecificationController;
 
-$company->Create(array(
-    'user_id' => 3,
-    'address' => '  dffef   ',
-    'economical_number' => 11221,
-    'registration_number' => 122121212
-));
-echo 'yes';
+$company = new CompanySpecificationController;
+$company->index();
 
-dd(CompanySpecification::all());
+
 
