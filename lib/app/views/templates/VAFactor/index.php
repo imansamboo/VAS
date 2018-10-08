@@ -7,13 +7,13 @@
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Alis</div>
+                    <div class="card-header">Contents</div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/alis/create') }}" class="btn btn-success btn-sm" title="Add New Ali">
+                        <a href="{{ url('/admin/contents/create') }}" class="btn btn-success btn-sm" title="Add New Content">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        <form method="GET" action="{{ url('/admin/alis') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+                        <form method="GET" action="{{ url('/admin/contents') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
                                 <span class="input-group-append">
@@ -30,29 +30,29 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>Title</th><th>Content</th><th>Category</th><th>Actions</th>
+                                        <th>#</th><th>Content</th><th>Men Id</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($alis as $item)
+                                @foreach($contents as $item)
                                     <tr>
                                         <td>{{ $loop->iteration or $item->id }}</td>
-                                        <td>{{ $item->title }}</td><td>{{ $item->content }}</td><td>{{ $item->category }}</td>
+                                        <td>{{ $item->content }}</td><td>{{ $item->men_id }}</td>
                                         <td>
-                                            <a href="{{ url('/admin/alis/' . $item->id) }}" title="View Ali"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/admin/alis/' . $item->id . '/edit') }}" title="Edit Ali"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                            <a href="{{ url('/admin/contents/' . $item->id) }}" title="View Content"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ url('/admin/contents/' . $item->id . '/edit') }}" title="Edit Content"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
-                                            <form method="POST" action="{{ url('/admin/alis' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ url('/admin/contents' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Ali" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Content" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
                                         </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
                             </table>
-                            <div class="pagination-wrapper"> {!! $alis->appends(['search' => Request::get('search')])->render() !!} </div>
+                            <div class="pagination-wrapper"> {!! $contents->appends(['search' => Request::get('search')])->render() !!} </div>
                         </div>
 
                     </div>
