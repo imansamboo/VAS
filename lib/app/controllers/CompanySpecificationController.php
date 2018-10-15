@@ -7,11 +7,8 @@
  */
 
 namespace App\Controllers;
-use Illuminate\Http\Request;
 
 class CompanySpecificationController extends Controller
 {
     protected $modelName = 'App\Models\CompanySpecification';
-
-
 }

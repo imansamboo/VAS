@@ -9,45 +9,56 @@
 
 </head>
 <body>
-
 <div class="container">
-    <h2>Enter <b>Company Specification</b></h2>
-    <form action="http://localhost:2001?controller=CompanySpecification&action=update&id={{factor.id}}" method="post">
+    <h2>Edit <b>Invoice Specification</b></h2>
+    <form action="http://localhost:2001?controller=VA&action=update&id={{factor.id}}" method="post">
         <div class="row" style="padding: 1%">
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">username</button>
+        <button class="btn btn-default" type="button">user ID</button>
       </span>
-                    <input value="{{factor.user_id}}" required name="user_id" type="text" class="form-control" placeholder="Enter user_id">
+                    <input required value="{{factor.user_id}}" name="user_id" type = "text" class="form-control" placeholder="Enter username">
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Registration Number</button>
+        <button class="btn btn-default" type="button">product Type</button>
       </span>
-                    <input value="{{factor.registration_number}}" required name="registration_number" type="text" class="form-control" placeholder="Enter Registration Number">
+                    <input required value="{{factor.product_type}}" name="product_type" type="text" class="form-control" placeholder="Enter product Type">
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
 
 
         </div><!-- /.row -->
         <div class="input-group"  style="padding: 1%">
-            <span class="input-group-addon" id="basic-addon1">Address</span>
-            <input value="{{factor.address}}" required  name="address" type="text" class="form-control" placeholder="Address" aria-describedby="basic-addon1" >
-        </div>
+            <span class="input-group-addon" id="basic-addon1">product ID</span>
+            <input required type="text" class="form-control" placeholder="product ID" aria-describedby="basic-addon1" value="{{factor.product_id}}" name="product_id"   >     </div>
         <div class="row" style="padding: 1%">
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Economical Number</button>
+        <button class="btn btn-default" type="button">company ID</button>
       </span>
-                    <input value="{{factor.economical_number}}" required name="economical_number" type="text" class="form-control" placeholder="Enter Economical Number">
+                    <input required value="{{factor.company_id}}" name="company_id" type="text" class="form-control" placeholder="Enter company ID">
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
-                <button class="btn btn-primary right" style="float: right; margin-right: 10%;">submit</button>
+                <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">factor ID</button>
+      </span>
+                    <input required value="{{factor.factor_id}}" name="factor_id" type="text" class="form-control" placeholder="Enter factor ID">
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                </div>
+                <div class="col-lg-6" style="padding-top: 15px;">
+                    <button class="btn btn-primary right" style="float: right; margin-right: 10%;">submit</button>
+                </div>
             </div>
         </div>
     </form>

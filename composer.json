@@ -11,9 +11,12 @@
         "illuminate/routing": "^5.7",
         "illuminate/events": "^5.7",
         "symfony/var-dumper": "^4.1",
-        "illuminate/http": "^5.7",
         "illuminate/view": "^5.7",
-        "pragmarx/random": "^0.2.2"
+        "pragmarx/random": "^0.2.2",
+        "twig/twig": "^2.0",
+        "illuminate/http": "^5.7",
+        "dompdf/dompdf": "dev-master",
+        "phenx/php-font-lib": "^0.5.1"
     },
     "autoload": {
         "psr-4":{

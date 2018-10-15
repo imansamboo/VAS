@@ -1,4 +1,3 @@
-
 <html>
 <head>
     <!-- Latest compiled and minified CSS -->
@@ -9,42 +8,41 @@
 
 </head>
 <body>
-
 <div class="container">
-    <h2>Enter <b>Company Specification</b></h2>
-    <form action="http://localhost:2001?controller=CompanySpecification&action=update&id={{factor.id}}" method="post">
+    <h2>Edit <b>Company Specification</b></h2>
+    <form action="http://localhost:2001?controller=VAFactor&action=update&id={{factor.id}}" method="post">
         <div class="row" style="padding: 1%">
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">username</button>
+        <button class="btn btn-default" type="button">
+            Name
+        </button>
       </span>
-                    <input value="{{factor.user_id}}" required name="user_id" type="text" class="form-control" placeholder="Enter user_id">
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
+                    <input required name="name" value="{{factor.name}}" type= "text" class="form-control" placeholder="Enter Name">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Registration Number</button>
+        <button class="btn btn-default" type="button">
+            user_id
+        </button>
       </span>
-                    <input value="{{factor.registration_number}}" required name="registration_number" type="text" class="form-control" placeholder="Enter Registration Number">
+                    <input required name="user_id" value="{{factor.user_id}}" type="text" class="form-control" placeholder="Enter User ID Number">
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
 
 
         </div><!-- /.row -->
         <div class="input-group"  style="padding: 1%">
-            <span class="input-group-addon" id="basic-addon1">Address</span>
-            <input value="{{factor.address}}" required  name="address" type="text" class="form-control" placeholder="Address" aria-describedby="basic-addon1" >
+            <span class="input-group-addon" id="basic-addon1">Company ID</span>
+            <input required value="{{factor.company_id}}" type="text" class="form-control" placeholder="Company ID" aria-describedby="basic-addon1" name="company_id"   >
         </div>
         <div class="row" style="padding: 1%">
             <div class="col-lg-6">
-                <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Economical Number</button>
-      </span>
-                    <input value="{{factor.economical_number}}" required name="economical_number" type="text" class="form-control" placeholder="Enter Economical Number">
-                </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
                 <button class="btn btn-primary right" style="float: right; margin-right: 10%;">submit</button>

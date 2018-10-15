@@ -30,6 +30,6 @@ class VAFactor extends model
      *
      * @var array
      */
-    protected $fillable = ['user_id','name'];
+    protected $fillable = ['user_id','name', 'company_id'];
 
 }

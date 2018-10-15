@@ -7,8 +7,8 @@
  */
 
 namespace App\Controllers;
-use Illuminate\Http\Request;
 
-class FactorController extends Controller{
+class VAFactorController extends Controller
+{
     protected $modelName = 'App\Models\VAFactor';
 }

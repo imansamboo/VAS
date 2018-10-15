@@ -50,6 +50,7 @@ for($i = 1; $i < 50 ;$i++){
     $company->Create(array(
         'user_id' => $num,
         'name' => $string,
+        'company_id' => $num,
     ));
 }
 

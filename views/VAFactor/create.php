@@ -10,39 +10,33 @@
 </head>
 <body>
 <div class="container">
-    <h2>Enter <b>Company Specification</b></h2>
-    <form action="http://localhost:2001?controller=CompanySpecification&action=store" method="post">
+    <h2>Enter <b>Factor Items</b></h2>
+    <form action="http://localhost:2001?controller=VAFactor&action=store" method="post">
         <div class="row" style="padding: 1%">
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">username</button>
+        <button class="btn btn-default" type="button">Name</button>
       </span>
-                    <input required name="user_id""text" class="form-control" placeholder="Enter username">
+                    <input required name="name" type= "text" class="form-control" placeholder="Enter Name">
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
                 <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Registration Number</button>
+        <button class="btn btn-default" type="button"> User ID</button>
       </span>
-                    <input required name="registration_number" type="text" class="form-control" placeholder="Enter Registration Number">
+                    <input required name="user_id" type="text" class="form-control" placeholder="Enter User ID Number">
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
 
 
         </div><!-- /.row -->
         <div class="input-group"  style="padding: 1%">
-            <span class="input-group-addon" id="basic-addon1">Address</span>
-            <input required type="text" class="form-control" placeholder="Address" aria-describedby="basic-addon1" name="address"   >     </div>
+            <span class="input-group-addon" id="basic-addon1">Company ID</span>
+            <input required type="text" class="form-control" placeholder="Company ID" aria-describedby="basic-addon1" name="company_id"   >     </div>
         <div class="row" style="padding: 1%">
             <div class="col-lg-6">
-                <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Economical Number</button>
-      </span>
-                    <input required name="economical_number" type="text" class="form-control" placeholder="Enter Economical Number">
-                </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
                 <button class="btn btn-primary right" style="float: right; margin-right: 10%;">submit</button>

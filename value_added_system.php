@@ -47,7 +47,7 @@ function value_added_system_activate()
     full_query($query);
 
     //create factor  table
-    $query = "CREATE TABLE `whmcs`.`VA-factor` ( `id` INT NOT NULL AUTO_INCREMENT , `user_id` INT NOT NULL , `name` VARCHAR(255) NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB; ";
+    $query = "CREATE TABLE `whmcs`.`VA-factor` ( `id` INT NOT NULL AUTO_INCREMENT , `user_id` INT NOT NULL ,  `company_id` INT NOT NULL , `name` VARCHAR(255) NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB; ";
     full_query($query);
 
 
